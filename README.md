@@ -1,52 +1,51 @@
 # Phan Anh Tu — Personal Academic Website
 
-Website cá nhân của PGS. Phan Anh Tu — Phó Hiệu trưởng Trường Kinh tế, Đại học Cần Thơ.
+Personal academic website of **Assoc. Prof. Phan Anh Tu** — Vice President of the School of Economics, Can Tho University, Vietnam.
 
-Đây là một website tĩnh (static website) gồm một file `index.html` duy nhất, chứa toàn bộ các trang: Home, Research, Teaching, CV, Events, Me Blog, Photos, Aphorisms, 3L Learning, và Contact. Việc chuyển trang được xử lý bằng JavaScript (điều hướng theo hash `#research`, `#cv`, …), có hỗ trợ chế độ sáng/tối (dark mode) và giao diện responsive cho điện thoại.
+**🌐 Live site: [https://thuyhuongctu.github.io/phan-anh-tu-website/](https://thuyhuongctu.github.io/phan-anh-tu-website/)**
 
-## Cách chạy website
+This is a static, single-file website: everything lives in `index.html`, which contains all pages — Home, Research, Teaching, CV, Events, Me Blog, Photos, Aphorisms, 3L Learning, and Contact. Page switching is handled with hash-based JavaScript navigation (`#research`, `#cv`, …), with dark-mode support and a responsive layout for mobile devices.
 
-### 1. Chạy thử trên máy tính (local)
+## How to run
 
-Chỉ cần mở file `index.html` bằng trình duyệt (nhấp đúp vào file), hoặc chạy một web server đơn giản:
+### 1. Run locally
+
+Simply open `index.html` in a browser (double-click the file), or start a simple web server:
 
 ```bash
-# Nếu có Python:
+# If Python is available:
 python3 -m http.server 8000
-# Sau đó mở trình duyệt tại: http://localhost:8000
+# Then open: http://localhost:8000
 ```
 
-### 2. Đưa website lên mạng bằng GitHub Pages (miễn phí)
+### 2. Deployment (GitHub Pages — free)
 
-Repository này đã có sẵn workflow tự động triển khai (`.github/workflows/deploy.yml`). Chỉ cần làm các bước sau **một lần duy nhất**:
+The repository ships with an automatic deployment workflow (`.github/workflows/deploy.yml`). Deployment is already configured and live. Every push to the default branch automatically rebuilds and republishes the site within 1–2 minutes.
 
-1. Vào repository trên GitHub → **Settings** → **Pages**.
-2. Ở mục **Build and deployment** → **Source**, chọn **GitHub Actions**.
-3. Merge pull request vào nhánh `main` (hoặc push code lên nhánh `main`).
-4. Đợi khoảng 1–2 phút, website sẽ chạy tại địa chỉ:
-   `https://<tên-tài-khoản>.github.io/phan-anh-tu-website/`
+One-time setup (already done):
 
-Sau đó, mỗi lần cập nhật nội dung và push lên nhánh `main`, website sẽ tự động được cập nhật.
+1. Repository visibility set to **Public** (GitHub Pages is free for public repositories).
+2. **Settings → Pages → Source** set to **GitHub Actions**.
 
-### 3. Gắn tên miền riêng (tùy chọn)
+### 3. Custom domain (optional)
 
-Nếu muốn dùng tên miền riêng (ví dụ `phananhtu.com`):
+To serve the site under a custom domain (e.g. a university subdomain such as `phananhtu.ctu.edu.vn`, or a purchased domain like `phananhtu.com`):
 
-1. Vào **Settings** → **Pages** → **Custom domain**, nhập tên miền.
-2. Trỏ DNS của tên miền về GitHub Pages theo hướng dẫn của GitHub.
+1. Go to **Settings → Pages → Custom domain** and enter the domain.
+2. Point the domain's DNS to GitHub Pages (a CNAME record to `thuyhuongctu.github.io`) following GitHub's instructions.
 
-## Những việc cần làm trước khi công bố chính thức
+## Pre-launch checklist
 
-- [ ] **Ảnh chân dung**: thay ảnh placeholder (chữ "PAT") trong `index.html` bằng ảnh chân dung thật (khung vuông).
-- [x] **Logo trường**: đã dùng logo chính thức của Đại học Cần Thơ và Trường Kinh tế (`assets/logo-ctu.png`, `assets/logo-soe.png`).
-- [ ] **File CV**: đặt file PDF vào thư mục `assets/` với tên `Phan_Anh_Tu_CV_May2026.pdf` (nút "Download CV" đang trỏ tới đường dẫn này).
-- [ ] **Form liên hệ**: hiện tại form sẽ mở trình email của người dùng (mailto). Có thể kết nối dịch vụ như Formspree hoặc Basin nếu muốn nhận tin nhắn trực tiếp.
+- [ ] **Portrait photo**: replace the "PAT" placeholder in `index.html` with a real portrait (square crop).
+- [x] **University logos**: official Can Tho University and School of Economics logos are in use (`assets/logo-ctu.png`, `assets/logo-soe.png`).
+- [ ] **CV file**: place the PDF at `assets/Phan_Anh_Tu_CV_May2026.pdf` (the "Download CV" button points to this path).
+- [ ] **Contact form**: currently opens the visitor's email client (mailto). A hosted form backend (e.g. Formspree or Basin) can be connected if direct message delivery is preferred.
 
-## Cấu trúc thư mục
+## Project structure
 
 ```
-├── index.html              # Toàn bộ website (HTML + CSS + JavaScript)
-├── assets/                 # Chứa file CV PDF, hình ảnh, …
+├── index.html              # The entire website (HTML + CSS + JavaScript)
+├── assets/                 # Logos, favicon, CV PDF, images, …
 └── .github/workflows/
-    └── deploy.yml          # Tự động triển khai lên GitHub Pages
+    └── deploy.yml          # Automatic deployment to GitHub Pages
 ```

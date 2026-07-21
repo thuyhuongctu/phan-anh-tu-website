@@ -1,0 +1,1675 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phan Anh Tu | School of Economics, Can Tho University</title>
+    <meta name="description" content="Phan Anh Tu is Vice President of the School of Economics at Can Tho University. He works on internationalization, foreign direct investment, entrepreneurship, and institutional economics, with a focus on Vietnam and the Mekong Delta." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Phan Anh Tu | School of Economics, Can Tho University" />
+    <meta property="og:description" content="Phan Anh Tu works on internationalization, FDI, entrepreneurship, and institutional economics, with a focus on Vietnam and the Mekong Delta." />
+    <meta property="og:url" content="https://phananhtu.com/" />
+    <link rel="canonical" href="https://phananhtu.com/" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Phan Anh Tu",
+      "jobTitle": "Vice President, School of Economics",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Can Tho University",
+        "url": "https://www.ctu.edu.vn"
+      },
+      "email": "patu@ctu.edu.vn",
+      "telephone": "+84 988 263 778",
+      "url": "https://phananhtu.com/",
+      "sameAs": [
+        "https://orcid.org/0000-0003-0667-3137"
+      ]
+    }
+    </script>
+    <style>
+      :root {
+        --bg: #f6f3ed;
+        --panel: #ffffff;
+        --panel-strong: #ffffff;
+        --text: #1b2127;
+        --muted: #4c575e;
+        --line: rgba(35, 45, 58, 0.16);
+        --accent: #1e5873;
+        --accent-soft: #e8f1f4;
+        --shadow: 0 16px 40px rgba(23, 31, 38, 0.06);
+        --surface-2: #fbfaf8;
+        --surface-3: #f3f0eb;
+        --tag-bg: rgba(30, 88, 115, 0.09);
+        --journal: #8b2f35;
+        --header-bg: rgba(246, 243, 237, 0.88);
+        --body-grad-top: #fbf8f4;
+        --body-glow: rgba(30, 88, 115, 0.08);
+        --serif: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
+        --sans: "Avenir Next", "Segoe UI", Arial, sans-serif;
+      }
+
+      [data-theme="dark"] {
+        --bg: #11161b;
+        --panel: #1b232b;
+        --panel-strong: #212b34;
+        --text: #e6eaef;
+        --muted: #9fadb8;
+        --line: rgba(255, 255, 255, 0.12);
+        --accent: #6fb7d8;
+        --accent-soft: #173039;
+        --shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+        --surface-2: #232d36;
+        --surface-3: #232d36;
+        --tag-bg: rgba(111, 183, 216, 0.16);
+        --journal: #e6939b;
+        --header-bg: rgba(17, 22, 27, 0.9);
+        --body-grad-top: #141b21;
+        --body-glow: rgba(111, 183, 216, 0.10);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: var(--sans);
+        color: var(--text);
+        background:
+          radial-gradient(circle at top left, var(--body-glow), transparent 24%),
+          linear-gradient(180deg, var(--body-grad-top) 0%, var(--bg) 100%);
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .site-header {
+        display: flex;
+        justify-content: space-between;
+        gap: 1.5rem;
+        align-items: flex-start;
+        padding: 1.5rem clamp(1.2rem, 3vw, 2.6rem) 1rem;
+        background: var(--header-bg);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .brand-home {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.48rem;
+        text-decoration: none;
+        font-family: var(--serif);
+        font-size: 1.75rem;
+        font-weight: 700;
+      }
+
+      .brand-logo {
+        width: auto;
+        height: 3.6rem;
+        display: block;
+        flex: 0 0 auto;
+      }
+
+      .brand p {
+        margin: 0.1rem 0 0;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      .site-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 0.3rem 0.85rem;
+        margin-left: auto;
+      }
+
+      .theme-toggle {
+        align-self: center;
+      }
+
+      .site-nav a {
+        padding: 0.3rem 0;
+        text-decoration: none;
+        color: var(--accent);
+        border-bottom: 1px solid transparent;
+        font-size: 0.96rem;
+      }
+
+      .site-nav a:hover,
+      .site-nav a:focus-visible,
+      .site-nav a.active {
+        color: var(--text);
+        border-bottom-color: var(--text);
+      }
+
+      .page-shell {
+        width: min(1040px, calc(100% - 2.4rem));
+        margin: 0 auto;
+        padding: 1.6rem 0 3.2rem;
+      }
+
+      .page-narrow {
+        width: min(1040px, calc(100% - 2.4rem));
+      }
+
+      /* Single-file navigation: only the active page is shown (all pages
+         remain visible if JavaScript is unavailable). */
+      .js main[data-page]:not(.is-active) {
+        display: none;
+      }
+
+      .site-footer {
+        width: min(1040px, calc(100% - 2.4rem));
+        margin: 0 auto 1.8rem;
+        padding-top: 0.95rem;
+        border-top: 1px solid rgba(35, 45, 58, 0.1);
+      }
+
+      .contact-map {
+        margin-top: 1.1rem;
+      }
+
+      .contact-map iframe {
+        display: block;
+        width: 100%;
+        height: 300px;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        margin-bottom: 0.5rem;
+      }
+
+      .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem 1.1rem;
+        margin-bottom: 0.6rem;
+      }
+
+      .footer-link {
+        color: var(--accent);
+        text-decoration: none;
+        font-size: 0.88rem;
+        font-weight: 600;
+      }
+
+      .footer-link:hover,
+      .footer-link:focus-visible {
+        text-decoration: underline;
+      }
+
+      .site-footer p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.84rem;
+        line-height: 1.5;
+        text-align: center;
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1.45fr) minmax(265px, 1fr);
+        gap: 1.5rem;
+        align-items: center;
+      }
+
+      .profile-column {
+        display: grid;
+        gap: 0.8rem;
+        justify-items: center;
+      }
+
+      .hero-copy,
+      .profile-card,
+      .panel {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        box-shadow: var(--shadow);
+      }
+
+      .hero-copy {
+        padding: 1.15rem 1.25rem 1.25rem;
+      }
+
+      .profile-card,
+      .panel {
+        padding: 1.05rem 1.15rem;
+      }
+
+      .eyebrow,
+      .section-label {
+        margin: 0 0 0.6rem;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: var(--muted);
+        font-size: 0.76rem;
+        font-weight: 700;
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin-top: 0;
+        font-family: var(--serif);
+        line-height: 1.1;
+      }
+
+      h1 {
+        font-size: clamp(2.2rem, 3.7vw, 3.4rem);
+        margin-bottom: 0.75rem;
+      }
+
+      h2 {
+        font-size: clamp(1.5rem, 2.6vw, 2rem);
+        margin-bottom: 0.75rem;
+      }
+
+      .lead,
+      .panel p,
+      .page-intro p {
+        color: var(--muted);
+        font-size: 1rem;
+        line-height: 1.68;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 2.15rem;
+        padding: 0.45rem 0.8rem;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        text-decoration: none;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 160ms ease, border-color 160ms ease;
+        font-size: 0.86rem;
+      }
+
+      .button-primary {
+        background: var(--accent);
+        color: white;
+        border-color: var(--accent);
+      }
+
+      .button-secondary {
+        background: var(--panel-strong);
+        color: var(--text);
+        border-color: var(--line);
+      }
+
+      .text-link {
+        color: var(--accent);
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      .grid-two,
+      .stack {
+        display: grid;
+        gap: 1rem;
+        margin-top: 1.1rem;
+      }
+
+      .grid-two {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .grid-one-two {
+        display: grid;
+        grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+        gap: 1rem;
+        margin-top: 1.1rem;
+      }
+
+      .grant-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(320px, 440px));
+        justify-content: center;
+        gap: 1.25rem;
+        margin-top: 1rem;
+      }
+
+      .research-card-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.95rem;
+        margin-top: 0.9rem;
+      }
+
+      .research-card {
+        padding: 0.98rem 1.02rem;
+        border-radius: 14px;
+        border: 1px solid var(--line);
+        background: var(--surface-2);
+      }
+
+      .research-card h3 {
+        margin-bottom: 0.42rem;
+        font-size: 1.06rem;
+        line-height: 1.28;
+      }
+
+      .research-card-meta {
+        margin: 0 0 0.5rem;
+        color: var(--muted);
+        font-size: 0.89rem;
+        line-height: 1.52;
+      }
+
+      .research-card-summary {
+        margin: 0;
+        font-size: 0.93rem;
+        line-height: 1.56;
+      }
+
+      .meta-list {
+        margin: 0.8rem 0 0;
+        padding-left: 1.2rem;
+        color: var(--muted);
+        line-height: 1.55;
+      }
+
+      .stack .meta-list li {
+        margin-bottom: 0.55rem;
+      }
+
+      .publication-highlights li {
+        margin-bottom: 0.9rem;
+        line-height: 1.75;
+      }
+
+      .profile-image {
+        display: block;
+        width: min(360px, 100%);
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        border-radius: 24px;
+        border: 1px solid rgba(255, 255, 255, 0.8);
+        background:
+          radial-gradient(circle at top left, rgba(30, 88, 115, 0.07), transparent 40%),
+          #f6f3ed;
+        padding: 0.2rem;
+        box-shadow: var(--shadow);
+        margin-bottom: 0;
+      }
+
+      .profile-column .profile-card {
+        width: 100%;
+      }
+
+      .profile-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.7rem 0.9rem;
+        margin-top: 0.95rem;
+      }
+
+      .profile-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.45rem;
+        text-decoration: none;
+        color: var(--text);
+        font-weight: 600;
+        font-size: 0.88rem;
+      }
+
+      .profile-link:hover,
+      .profile-link:focus-visible {
+        color: var(--accent);
+      }
+
+      .profile-link-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: var(--surface-2);
+        color: var(--accent);
+        font-size: 0.75rem;
+        font-weight: 700;
+        flex: 0 0 auto;
+      }
+
+      .icon-svg {
+        width: 0.84rem;
+        height: 0.84rem;
+        display: block;
+      }
+
+      .page-intro {
+        margin-bottom: 1.15rem;
+      }
+
+      .callout {
+        background: var(--accent-soft);
+      }
+
+      .section-heading {
+        margin-top: 1.4rem;
+        margin-bottom: 0.2rem;
+      }
+
+      .section-icon-heading {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.42rem;
+      }
+
+      .section-icon {
+        width: 1.12rem;
+        height: 1.12rem;
+        display: block;
+        flex: 0 0 auto;
+        opacity: 0.92;
+        transform: translateY(0.02em);
+        color: var(--accent);
+      }
+
+      .section-note {
+        color: var(--muted);
+        margin: 0 0 0.75rem;
+        line-height: 1.6;
+      }
+
+      .compact-section {
+        margin-top: 0.55rem;
+      }
+
+      .event-list {
+        list-style: none;
+        padding-left: 0;
+        margin-top: 0.8rem;
+      }
+
+      .event-list li {
+        padding: 0.55rem 0 0.55rem 9.8rem;
+        text-indent: -9.8rem;
+        border-top: 1px solid var(--line);
+        line-height: 1.5;
+        color: var(--muted);
+      }
+
+      .event-list li:first-child {
+        border-top: 0;
+      }
+
+      .event-list strong {
+        display: inline-block;
+        width: 9.8rem;
+        text-indent: 0;
+        color: var(--accent);
+        font-weight: 700;
+        font-size: 0.86rem;
+        font-variant-numeric: tabular-nums;
+      }
+
+      @media (max-width: 560px) {
+        .event-list li {
+          padding-left: 0;
+          text-indent: 0;
+        }
+        .event-list strong {
+          display: block;
+          width: auto;
+          margin-bottom: 0.1rem;
+        }
+      }
+
+      .grant-grid .project-card {
+        min-height: 100%;
+        padding: 1.25rem 1.35rem;
+        display: flex;
+        flex-direction: column;
+        border-top: 3px solid var(--accent);
+      }
+
+      .project-card h3 {
+        font-size: 1.25rem;
+        margin-bottom: 0.6rem;
+      }
+
+      .grant-facts {
+        display: grid;
+        gap: 0.3rem 1rem;
+        margin: 0.85rem 0 1rem;
+      }
+
+      .grant-facts > div {
+        display: flex;
+        gap: 0.6rem;
+        font-size: 0.92rem;
+        line-height: 1.4;
+      }
+
+      .grant-facts dt {
+        flex: 0 0 78px;
+        color: var(--muted);
+        font-weight: 600;
+      }
+
+      .grant-facts dd {
+        margin: 0;
+        color: var(--text);
+      }
+
+      .grant-card-link {
+        margin-top: auto;
+        align-self: flex-start;
+        font-weight: 600;
+      }
+
+      /* Home bio: darker, more readable than muted leads */
+      .hero-copy .lead {
+        color: var(--text);
+        font-size: 1.02rem;
+        line-height: 1.7;
+      }
+
+      .hero-tags-label {
+        margin: 0.6rem 0 0.35rem;
+        color: var(--muted);
+        font-size: 0.9rem;
+        font-weight: 600;
+      }
+
+      a.tag {
+        text-decoration: none;
+        cursor: pointer;
+        transition: transform 120ms ease, box-shadow 120ms ease, filter 120ms ease;
+      }
+
+      a.tag:hover,
+      a.tag:focus-visible {
+        transform: translateY(-1px);
+        filter: brightness(0.96);
+        box-shadow: 0 3px 10px rgba(23, 31, 38, 0.12);
+      }
+
+      /* Colour-coded home cards */
+      .grant-home-card--lead {
+        border-top-color: #1e5873;
+      }
+
+      .grant-home-card--fund {
+        border-top-color: #b45309;
+      }
+
+      .grant-home-tag {
+        display: inline-block;
+        margin: 0 0 0.5rem;
+        padding: 0.18rem 0.6rem;
+        border-radius: 999px;
+        font-size: 0.76rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+      }
+
+      .grant-home-card--lead .grant-home-tag {
+        background: rgba(30, 88, 115, 0.12);
+        color: #1e5873;
+      }
+
+      .grant-home-card--fund .grant-home-tag {
+        background: rgba(180, 83, 9, 0.12);
+        color: #b45309;
+      }
+
+      .tag-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.45rem;
+        margin: 0.75rem 0 1rem;
+      }
+
+      .hero-tags {
+        margin-top: 0.25rem;
+        margin-bottom: 0.95rem;
+      }
+
+      .homepage-highlight {
+        color: var(--accent);
+      }
+
+      .tag {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.28rem 0.62rem;
+        border-radius: 999px;
+        background: var(--tag-bg);
+        color: var(--accent);
+        font-size: 0.84rem;
+        font-weight: 600;
+      }
+
+      .project-meta {
+        color: var(--muted);
+        font-size: 0.94rem;
+      }
+
+      .detail-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1.55fr) minmax(240px, 0.8fr);
+        gap: 1.15rem;
+      }
+
+      .detail-sidebar {
+        align-self: start;
+        position: sticky;
+        top: 1rem;
+      }
+
+      .contact-layout .panel {
+        padding: 1rem 1.05rem;
+      }
+
+      .publication-card {
+        position: relative;
+        overflow: hidden;
+        padding: 0.68rem 0.82rem 0.74rem;
+      }
+
+      .publication-card::before {
+        content: "";
+        position: absolute;
+        inset: 0 auto 0 0;
+        width: 2px;
+        background: #d4e0ea;
+      }
+
+      .publication-card h2,
+      .publication-card h3 {
+        padding-right: 0.75rem;
+        margin-bottom: 0.28rem;
+        font-size: 1.06rem;
+        line-height: 1.28;
+      }
+
+      .publication-title-link {
+        color: inherit;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+      }
+
+      .publication-title-link:hover,
+      .publication-title-link:focus-visible {
+        color: var(--accent);
+        border-bottom-color: var(--accent);
+      }
+
+      .publication-meta {
+        margin: 0.12rem 0 0.55rem;
+        color: var(--muted);
+        font-size: 0.88rem;
+        line-height: 1.5;
+      }
+
+      .publication-venue {
+        font-style: italic;
+        font-weight: 700;
+        color: var(--journal);
+      }
+
+      .status-pill {
+        display: inline-block;
+        margin-bottom: 0.5rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 999px;
+        background: var(--accent-soft);
+        color: var(--accent);
+        font-size: 0.72rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+      }
+
+      .teaching-org {
+        margin: 1.2rem 0 0.45rem;
+        padding-bottom: 0.28rem;
+        font-family: var(--sans);
+        font-size: 0.82rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--accent);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .teaching-org:first-of-type {
+        margin-top: 0.2rem;
+      }
+
+      .teaching-course-list {
+        margin: 0 0 0.3rem;
+        padding-left: 1.1rem;
+      }
+
+      .teaching-course-list li {
+        margin-bottom: 0.38rem;
+        font-size: 0.95rem;
+        line-height: 1.55;
+        color: var(--muted);
+      }
+
+      .teaching-course-list li:last-child {
+        margin-bottom: 0;
+      }
+
+      /* ── Photo gallery placeholders ─────────────────────── */
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+        margin-top: 1.1rem;
+      }
+
+      .gallery-tile {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 0.2rem;
+        aspect-ratio: 4 / 3;
+        padding: 1rem 1.1rem;
+        border-radius: 14px;
+        border: 1px dashed var(--line);
+        background:
+          radial-gradient(circle at top right, var(--body-glow), transparent 55%),
+          var(--surface-2);
+      }
+
+      .gallery-tile h3 {
+        margin: 0;
+        font-size: 1.15rem;
+      }
+
+      .gallery-tile p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.85rem;
+      }
+
+      /* ── Contact form ───────────────────────────────────── */
+      .contact-form {
+        display: grid;
+        gap: 0.75rem;
+        margin-top: 0.4rem;
+      }
+
+      .form-field {
+        display: grid;
+        gap: 0.28rem;
+      }
+
+      .form-field label {
+        font-size: 0.84rem;
+        font-weight: 600;
+        color: var(--muted);
+      }
+
+      .form-field input,
+      .form-field textarea {
+        width: 100%;
+        padding: 0.55rem 0.7rem;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        background: var(--surface-2);
+        color: var(--text);
+        font-family: var(--sans);
+        font-size: 0.92rem;
+        line-height: 1.45;
+      }
+
+      .form-field textarea {
+        resize: vertical;
+        min-height: 7rem;
+      }
+
+      .form-field input:focus-visible,
+      .form-field textarea:focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 1px;
+        border-color: var(--accent);
+      }
+
+      .form-note {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.8rem;
+        line-height: 1.5;
+      }
+
+      /* ── Nav toggle ─────────────────────────────────────── */
+      .nav-toggle {
+        display: none;
+        flex-direction: column;
+        gap: 0.28rem;
+        padding: 0.45rem 0.25rem;
+        margin-top: 0.22rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        flex-shrink: 0;
+        align-self: flex-start;
+      }
+
+      .nav-toggle span {
+        display: block;
+        width: 1.4rem;
+        height: 2px;
+        background: var(--text);
+        border-radius: 2px;
+        transition: transform 220ms ease, opacity 160ms ease;
+      }
+
+      .nav-open .nav-toggle span:nth-child(1) {
+        transform: translateY(6.5px) rotate(45deg);
+      }
+      .nav-open .nav-toggle span:nth-child(2) {
+        opacity: 0;
+      }
+      .nav-open .nav-toggle span:nth-child(3) {
+        transform: translateY(-6.5px) rotate(-45deg);
+      }
+
+      /* Field-coloured tag pills */
+      .tag--internationalization {
+        background: rgba(30, 88, 115, 0.10);
+        color: #1e5873;
+      }
+      .tag--entrepreneurship {
+        background: rgba(180, 83, 9, 0.10);
+        color: #b45309;
+      }
+      .tag--institutional {
+        background: rgba(22, 101, 52, 0.10);
+        color: #166534;
+      }
+      .tag--mekong {
+        background: rgba(109, 40, 217, 0.10);
+        color: #6d28d9;
+      }
+
+      /* Theme toggle button */
+      .theme-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.1rem;
+        height: 2.1rem;
+        flex: 0 0 auto;
+        padding: 0;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: var(--panel-strong);
+        color: var(--accent);
+        cursor: pointer;
+        transition: background 140ms ease, border-color 140ms ease;
+      }
+
+      .theme-toggle:hover {
+        background: var(--accent-soft);
+        border-color: var(--accent);
+      }
+
+      .theme-toggle svg {
+        width: 1.15rem;
+        height: 1.15rem;
+      }
+
+      .theme-toggle .icon-moon { display: none; }
+      [data-theme="dark"] .theme-toggle .icon-sun { display: none; }
+      [data-theme="dark"] .theme-toggle .icon-moon { display: inline; }
+
+      /* Dark-mode component adjustments */
+      [data-theme="dark"] .profile-image {
+        border-color: rgba(255, 255, 255, 0.14);
+        background:
+          radial-gradient(circle at top left, rgba(111, 183, 216, 0.12), transparent 40%),
+          var(--panel-strong);
+      }
+
+      [data-theme="dark"] .button-primary {
+        color: #11161b;
+      }
+
+      [data-theme="dark"] .publication-card::before {
+        background: var(--accent);
+      }
+
+      [data-theme="dark"] .tag--internationalization { background: rgba(111, 183, 216, 0.18); color: #8fcdea; }
+      [data-theme="dark"] .tag--entrepreneurship { background: rgba(230, 158, 80, 0.18); color: #f0b277; }
+      [data-theme="dark"] .tag--institutional { background: rgba(91, 191, 138, 0.18); color: #7fd6a4; }
+      [data-theme="dark"] .tag--mekong { background: rgba(168, 130, 240, 0.18); color: #bda3f2; }
+
+      [data-theme="dark"] .grant-home-card--lead .grant-home-tag { background: rgba(111, 183, 216, 0.18); color: #8fcdea; }
+      [data-theme="dark"] .grant-home-card--fund .grant-home-tag { background: rgba(230, 158, 80, 0.18); color: #f0b277; }
+      [data-theme="dark"] .grant-home-card--fund { border-top-color: #e69e50; }
+
+      @media (max-width: 900px) {
+        .hero,
+        .grid-two,
+        .grid-one-two,
+        .grant-grid,
+        .research-card-grid,
+        .gallery-grid,
+        .detail-layout {
+          grid-template-columns: 1fr;
+        }
+
+        .site-header {
+          flex-wrap: wrap;
+        }
+
+        .nav-toggle {
+          display: flex;
+        }
+
+        .site-nav {
+          display: none;
+          width: 100%;
+          flex-direction: column;
+          gap: 0;
+          padding-top: 0.5rem;
+          border-top: 1px solid var(--line);
+          margin-top: 0.6rem;
+          justify-content: flex-start;
+        }
+
+        .nav-open .site-nav {
+          display: flex;
+        }
+
+        .site-nav a {
+          padding: 0.65rem 0;
+          border-bottom: 1px solid rgba(35, 45, 58, 0.08);
+          font-size: 0.96rem;
+        }
+
+        .site-nav a:last-child {
+          border-bottom: none;
+        }
+      }
+    </style>
+    <script>document.documentElement.classList.add("js");</script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">
+        <a class="brand-home" href="#home">
+          <!-- Placeholder mark: replace with the official Can Tho University logo before launch -->
+          <svg class="brand-logo" viewBox="0 0 64 64" role="img" aria-label="Can Tho University logo placeholder">
+            <circle cx="32" cy="32" r="29" fill="none" stroke="#1e5873" stroke-width="2.6" />
+            <circle cx="32" cy="32" r="23" fill="none" stroke="#1e5873" stroke-width="1" opacity="0.55" />
+            <text x="32" y="39" text-anchor="middle" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="17" font-weight="700" fill="#1e5873">CTU</text>
+          </svg>
+          <span>Phan Anh Tu</span>
+        </a>
+        <p>Vice President, School of Economics · Can Tho University</p>
+      </div>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="active" href="#home">Home</a>
+        <a href="#research">Research</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#cv">CV</a>
+        <a href="#events">Events</a>
+        <a href="#blog">Me Blog</a>
+        <a href="#photos">Photos</a>
+        <a href="#aphorisms">Aphorisms</a>
+        <a href="#3l-learning">3L Learning</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5 5l1.4 1.4M17.6 17.6 19 19M19 5l-1.4 1.4M6.4 17.6 5 19"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 14.5A8 8 0 0 1 9.5 4 7 7 0 1 0 20 14.5Z"/></svg>
+      </button>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <!-- ══════════════════════ HOME ══════════════════════ -->
+    <main class="page-shell is-active" data-page="home" data-title="Phan Anh Tu | School of Economics, Can Tho University">
+      <section class="hero">
+        <div class="hero-copy">
+          <h1>Phan Anh Tu</h1>
+          <p class="lead">
+            I am <span class="homepage-highlight">Vice President of the School of
+            Economics at Can Tho University</span>, with 27 years of academic
+            experience in international business, entrepreneurship, and
+            institutional economics. My research focuses on Vietnam and the
+            <span class="homepage-highlight">Mekong Delta</span>, where
+            institutional volatility creates distinct constraints and
+            opportunities for firms and entrepreneurs.
+          </p>
+          <p class="lead">
+            My work spans two complementary streams: how institutional context,
+            national culture distance, and firm characteristics shape FDI
+            entry-mode decisions and internationalization–performance
+            relationships, and how entrepreneurs navigate weak institutions,
+            informal economy dynamics, and corruption. It has appeared in
+            Scopus/SSCI journals including <em>Entrepreneurship Theory and
+            Practice</em>, <em>European Management Review</em>, and the
+            <em>Asian Academy of Management Journal</em>.
+          </p>
+          <p class="lead">
+            I have supervised 2 completed PhD dissertations and more than 30
+            master's theses, and my research on entrepreneurship in the Mekong
+            Delta has been funded by the Vietnamese Ministry of Education and
+            Training. As curriculum architect, I lead programme design aligned
+            with OBE and AUN-QA standards.
+          </p>
+          <p class="hero-tags-label">Explore my research by field:</p>
+          <div class="tag-row hero-tags">
+            <a class="tag tag--internationalization" href="#research">Internationalization &amp; FDI</a>
+            <a class="tag tag--entrepreneurship" href="#research">Entrepreneurship</a>
+            <a class="tag tag--institutional" href="#research">Institutional Economics</a>
+            <a class="tag tag--mekong" href="#research">Mekong Delta &amp; SMEs</a>
+          </div>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#cv">Download CV</a>
+            <a class="button button-secondary" href="#research">Research overview</a>
+          </div>
+        </div>
+        <aside class="profile-column">
+          <!-- Placeholder portrait: replace with a professional photo (square crop) before launch -->
+          <svg class="profile-image" viewBox="0 0 360 360" role="img" aria-label="Portrait of Phan Anh Tu (photo to be added)">
+            <rect width="360" height="360" rx="22" fill="#e8f1f4" />
+            <circle cx="180" cy="140" r="58" fill="#1e5873" opacity="0.22" />
+            <path d="M70 330c14-72 58-104 110-104s96 32 110 104" fill="#1e5873" opacity="0.22" />
+            <text x="180" y="158" text-anchor="middle" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="52" font-weight="700" fill="#1e5873">PAT</text>
+          </svg>
+          <div class="profile-card">
+            <ul class="meta-list">
+              <li>School of Economics, Can Tho University</li>
+              <li>Campus II, 3/2 Street, Ninh Kieu, Can Tho, Vietnam</li>
+            </ul>
+            <div class="profile-links" aria-label="Profile links">
+              <a class="profile-link" href="https://orcid.org/0000-0003-0667-3137" target="_blank" rel="noreferrer" aria-label="ORCID">
+                <span class="profile-link-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" class="icon-svg">
+                    <circle cx="12" cy="12" r="9" fill="currentColor"/>
+                    <circle cx="9" cy="8" r="1.1" fill="white"/>
+                    <path d="M8.3 10.2h1.5v5.6H8.3v-5.6Zm2.8 0h2.2c2 0 3.4 1.1 3.4 2.8 0 1.8-1.4 2.8-3.4 2.8h-2.2v-5.6Zm1.5 1.3v3h.7c1.1 0 1.9-.5 1.9-1.5s-.8-1.5-1.9-1.5h-.7Z" fill="white"/>
+                  </svg>
+                </span>
+                <span>ORCID</span>
+              </a>
+              <a class="profile-link" href="mailto:patu@ctu.edu.vn" aria-label="Email">
+                <span class="profile-link-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" class="icon-svg">
+                    <rect x="4" y="6.5" width="16" height="11" rx="2.2" fill="currentColor"/>
+                    <path d="M5.8 8.3 12 12.8l6.2-4.5" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <span>Email</span>
+              </a>
+              <a class="profile-link" href="tel:+84988263778" aria-label="Phone">
+                <span class="profile-link-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" class="icon-svg">
+                    <path d="M7.6 4.5c.5-.5 1.3-.5 1.8 0l1.9 1.9c.5.5.5 1.3 0 1.8l-1 1a.9.9 0 0 0-.1 1.1 12.8 12.8 0 0 0 3.5 3.5c.35.23.81.19 1.1-.1l1-1c.5-.5 1.3-.5 1.8 0l1.9 1.9c.5.5.5 1.3 0 1.8l-1.1 1.1c-.9.9-2.3 1.2-3.5.7-2.2-.9-4.3-2.3-6.1-4.1S5.6 10.2 4.7 8c-.5-1.2-.2-2.6.7-3.5l1.1-1.1Z" fill="currentColor"/>
+                  </svg>
+                </span>
+                <span>Phone</span>
+              </a>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="grid-one-two compact-section">
+        <article class="panel">
+          <h2 class="section-icon-heading">
+            <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15.5H6.5A2.5 2.5 0 0 0 4 21V5.5Z"/><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"/></svg>
+            <span>Research at a glance</span>
+          </h2>
+          <ul class="meta-list publication-highlights">
+            <li><strong>Internationalization &amp; FDI.</strong> Institutional context, culture distance, and firm characteristics in FDI entry-mode decisions and internationalization–performance relationships in emerging and transition economies.</li>
+            <li><strong>Entrepreneurship under institutional constraint.</strong> How entrepreneurs navigate weak institutions, informal economy dynamics, and corruption — from bribery motives to institutional quality and entrepreneurial intention.</li>
+            <li><strong>Outlets.</strong> Scopus/SSCI journals including <span class="publication-venue">Entrepreneurship Theory and Practice</span>, <span class="publication-venue">European Management Review</span>, and the <span class="publication-venue">Asian Academy of Management Journal</span>.</li>
+          </ul>
+          <a class="text-link" href="#research">Research statement →</a>
+        </article>
+        <article class="panel">
+          <h2 class="section-icon-heading">
+            <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 2.8 8 12 13l9.2-5L12 3Z"/><path d="M6 10.6V16c0 1.7 2.7 3.2 6 3.2s6-1.5 6-3.2v-5.4"/></svg>
+            <span>Supervision record</span>
+          </h2>
+          <ul class="meta-list event-list">
+            <li><strong>2016–2024.</strong> Truong Khanh Vinh Xuyen, PhD — competitive advantage in rice-export firms, Mekong Delta.</li>
+            <li><strong>2018–2024.</strong> Tran Thi My Phuong, PhD — entrepreneurial value-creation model in Mekong Delta graduates.</li>
+            <li><strong>2013–2024.</strong> 30+ master's theses across MBA, Finance, Economics, and Agricultural Economics.</li>
+          </ul>
+          <a class="text-link" href="#teaching">Teaching &amp; supervision →</a>
+        </article>
+      </section>
+
+      <section class="compact-section">
+        <h2 class="section-heading">Leadership and funded research</h2>
+        <div class="grant-grid">
+          <article class="panel project-card grant-home-card--lead">
+            <p class="grant-home-tag">Institutional leadership</p>
+            <h3>Vice President, School of Economics</h3>
+            <p>
+              Institutional leadership and curriculum architecture at Can Tho
+              University, with programme design aligned to outcome-based
+              education (OBE) and AUN-QA quality assurance standards.
+            </p>
+            <dl class="grant-facts">
+              <div><dt>Role</dt><dd>Vice President</dd></div>
+              <div><dt>Institution</dt><dd>Can Tho University</dd></div>
+              <div><dt>Focus</dt><dd>Curriculum &amp; quality assurance</dd></div>
+            </dl>
+            <a class="text-link grant-card-link" href="#teaching">Teaching &amp; supervision →</a>
+          </article>
+          <article class="panel project-card grant-home-card--fund">
+            <p class="grant-home-tag">Funded research</p>
+            <h3>Entrepreneurship in the Mekong Delta</h3>
+            <p>
+              Funded research on entrepreneurship, institutions, and SME
+              development in the Mekong Delta, supported by the Vietnamese
+              Ministry of Education and Training.
+            </p>
+            <dl class="grant-facts">
+              <div><dt>Role</dt><dd>Principal investigator</dd></div>
+              <div><dt>Funder</dt><dd>Ministry of Education and Training, Vietnam</dd></div>
+              <div><dt>Region</dt><dd>Mekong Delta</dd></div>
+            </dl>
+            <a class="text-link grant-card-link" href="#research">Related research →</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- ══════════════════════ RESEARCH ══════════════════════ -->
+    <main class="page-shell page-narrow" data-page="research" data-title="Research | Phan Anh Tu">
+      <section class="page-intro">
+        <h1>Research</h1>
+        <p class="lead">
+          My research advances two complementary streams at the intersection of
+          international business and institutional economics. See also my
+          <a class="text-link" href="https://orcid.org/0000-0003-0667-3137" target="_blank" rel="noreferrer">ORCID profile</a>
+          and <a class="text-link" href="#cv">full CV</a>.
+        </p>
+      </section>
+
+      <section class="stack">
+        <article class="panel">
+          <h2>Research statement</h2>
+          <div class="research-card-grid">
+            <div class="research-card">
+              <h3>1 · Internationalization &amp; foreign direct investment</h3>
+              <p class="research-card-summary">
+                I investigate how institutional context, national culture
+                distance, and firm characteristics shape FDI entry-mode
+                decisions and internationalization–performance relationships in
+                emerging and transition economies. This work draws on the OLI
+                paradigm, internalization theory, the Uppsala model, and
+                Born-Global/Springboard perspectives. I focus empirically on
+                Vietnam and the Mekong Delta, where institutional volatility
+                and weak rule of law create distinct constraints and
+                opportunities.
+              </p>
+            </div>
+            <div class="research-card">
+              <h3>2 · Entrepreneurship under institutional constraint</h3>
+              <p class="research-card-summary">
+                My second stream examines how entrepreneurs navigate weak
+                institutions, informal economy dynamics, and corruption. I
+                explore what motivates bribery, how informal payments affect
+                performance, and how institutional quality shapes
+                entrepreneurial intention and value creation.
+              </p>
+            </div>
+          </div>
+          <p>
+            Both streams are published in Scopus/SSCI journals including
+            <span class="publication-venue">Entrepreneurship Theory and Practice</span>,
+            <span class="publication-venue">European Management Review</span>, and the
+            <span class="publication-venue">Asian Academy of Management Journal</span>.
+            I have supervised 2 PhD dissertations and 30+ master's theses, and
+            have been funded by the Vietnamese Ministry of Education and
+            Training for research on entrepreneurship in the Mekong Delta.
+          </p>
+        </article>
+
+        <article class="panel callout">
+          <span class="status-pill">In preparation</span>
+          <h2>Publications</h2>
+          <p>
+            The complete list of Q1-indexed publications — with full citations
+            and DOI links — is being migrated here from the May 2026 CV. In the
+            meantime, the <a class="text-link" href="#cv">CV page</a> contains
+            the full record.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <!-- ══════════════════════ TEACHING ══════════════════════ -->
+    <main class="page-shell page-narrow" data-page="teaching" data-title="Teaching | Phan Anh Tu">
+      <section class="page-intro">
+        <h1>Teaching</h1>
+        <p class="lead">
+          27 years of academic experience with rigorous supervision across
+          undergraduate, master, and PhD levels.
+        </p>
+      </section>
+
+      <section class="stack">
+        <article class="panel">
+          <h2>Teaching philosophy</h2>
+          <p>
+            My teaching is grounded in three interlocking commitments:
+            analytical rigor, contextual relevance, and student-centered
+            mentorship.
+          </p>
+          <div class="research-card-grid">
+            <div class="research-card">
+              <h3>Analytical rigor</h3>
+              <p class="research-card-summary">
+                Training students to apply formal frameworks to real phenomena.
+                I emphasize disciplined thinking: What is the research
+                question? What is the evidence? What assumptions are we making?
+                What are the limitations?
+              </p>
+            </div>
+            <div class="research-card">
+              <h3>Contextual relevance</h3>
+              <p class="research-card-summary">
+                Situating business and economic theory in the Vietnam and
+                Mekong Delta context. Why does FDI strategy differ across
+                institutional contexts? How do entrepreneurial intentions and
+                corruption interact in emerging economies?
+              </p>
+            </div>
+            <div class="research-card">
+              <h3>Student-centered mentorship</h3>
+              <p class="research-card-summary">
+                Meeting students where they are and helping them move toward
+                publication-readiness and an independent scholarly voice. I
+                provide constructive feedback, model the writing process, and
+                create opportunities for collaboration.
+              </p>
+            </div>
+          </div>
+          <p>
+            Across all levels, I emphasize continuous learning, intellectual
+            humility, and the interconnection between teaching and research.
+          </p>
+        </article>
+
+        <article class="panel">
+          <h2>Supervision</h2>
+
+          <h3 class="teaching-org">PhD dissertations (completed)</h3>
+          <ul class="teaching-course-list">
+            <li>Truong Khanh Vinh Xuyen (2016–2024): Competitive advantage in rice-export firms, Mekong Delta.</li>
+            <li>Tran Thi My Phuong (2018–2024): Entrepreneurial value-creation model in Mekong Delta graduates.</li>
+          </ul>
+
+          <h3 class="teaching-org">Master's theses (2013–2024)</h3>
+          <ul class="teaching-course-list">
+            <li>30+ theses across MBA, Finance, Economics, and Agricultural Economics.</li>
+          </ul>
+
+          <h3 class="teaching-org">Outcomes</h3>
+          <ul class="teaching-course-list">
+            <li>100% of PhD candidates completed on schedule.</li>
+            <li>~60% of master's theses advanced to publishable research.</li>
+            <li>Frequent co-authorship with mentees.</li>
+          </ul>
+        </article>
+
+        <article class="panel callout">
+          <span class="status-pill">In preparation</span>
+          <h2>Course roster</h2>
+          <p>
+            The full roster of courses taught at the undergraduate, master, and
+            PhD levels will be listed here.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <!-- ══════════════════════ CV ══════════════════════ -->
+    <main class="page-shell page-narrow" data-page="cv" data-title="CV | Phan Anh Tu">
+      <section class="page-intro">
+        <h1>Curriculum Vitae</h1>
+        <p class="lead">
+          The CV is updated annually each May. The current version is from May
+          2026.
+        </p>
+      </section>
+
+      <section class="stack">
+        <article class="panel">
+          <h2>Download</h2>
+          <p>
+            Full academic CV, including the complete publication record,
+            supervision history, and institutional service.
+          </p>
+          <div class="hero-actions">
+            <!-- Place the PDF next to this file (e.g. in an assets/ folder) and keep this path in sync -->
+            <a class="button button-primary" href="assets/Phan_Anh_Tu_CV_May2026.pdf">Download CV (PDF)</a>
+            <a class="button button-secondary" href="#contact">Request by email</a>
+          </div>
+        </article>
+        <article class="panel">
+          <h2>At a glance</h2>
+          <ul class="meta-list">
+            <li>Vice President, School of Economics, Can Tho University.</li>
+            <li>27 years of academic experience in international business, entrepreneurship, and institutional economics.</li>
+            <li>Q1-published in Scopus/SSCI journals; research funded by the Vietnamese Ministry of Education and Training.</li>
+            <li>2 completed PhD dissertations and 30+ master's theses supervised.</li>
+            <li>ORCID: <a class="text-link" href="https://orcid.org/0000-0003-0667-3137" target="_blank" rel="noreferrer">0000-0003-0667-3137</a></li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <!-- ══════════════════════ EVENTS ══════════════════════ -->
+    <main class="page-shell page-narrow" data-page="events" data-title="Events | Phan Anh Tu">
+      <section class="page-intro">
+        <h1>Events</h1>
+        <p class="lead">
+          Upcoming talks, conferences, and workshops, together with an archive
+          of past events.
+        </p>
+      </section>
+
+      <section class="stack">
+        <article class="panel callout">
+          <span class="status-pill">Coming soon</span>
+          <h2>Event calendar</h2>
+          <p>
+            The calendar of upcoming events for the next 6–12 months and the
+            archive of past events will be published here.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <!-- ══════════════════════ ME BLOG ══════════════════════ -->
+    <main class="page-shell page-narrow" data-page="blog" data-title="Me Blog | Phan Anh Tu">
+      <section class="page-intro">
+        <h1>Me Blog</h1>
+        <p class="lead">
+          Personal articles on research, teaching, and the Mekong Delta.
+        </p>
+      </section>
+
+      <section class="stack">
+        <article class="panel callout">
+          <span class="status-pill">Coming soon</span>
+          <h2>First posts in preparation</h2>
+          <p>
+            Blog posts will appear here in reverse chronological order, tagged
+            by topic. The first articles are being prepared.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <!-- ══════════════════════ PHOTOS ══════════════════════ -->
+    <main class="page-shell page-narrow" data-page="photos" data-title="Photos | Phan Anh Tu">
+      <section class="page-intro">
+        <h1>Photos</h1>
+        <p class="lead">
+          A gallery of moments from conferences, teaching, travel, and work
+          with the team.
+        </p>
+      </section>
+
+      <div class="gallery-grid">
+        <div class="gallery-tile">
+          <h3>Conferences</h3>
+          <p>Photos coming soon</p>
+        </div>
+        <div class="gallery-tile">
+          <h3>Teaching</h3>
+          <p>Photos coming soon</p>
+        </div>
+        <div class="gallery-tile">
+          <h3>Travel</h3>
+          <p>Photos coming soon</p>
+        </div>
+        <div class="gallery-tile">
+          <h3>Team</h3>
+          <p>Photos coming soon</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- ══════════════════════ APHORISMS ══════════════════════ -->
+    <main class="page-shell page-narrow" data-page="aphorisms" data-title="Aphorisms | Phan Anh Tu">
+      <section class="page-intro">
+        <h1>Aphorisms</h1>
+        <p class="lead">
+          A curated collection of quotes, organised by theme.
+        </p>
+      </section>
+
+      <section class="stack">
+        <article class="panel callout">
+          <span class="status-pill">Coming soon</span>
+          <h2>Collection in preparation</h2>
+          <p>
+            A filterable collection of 30–50 aphorisms on scholarship,
+            learning, and life will be published here.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <!-- ══════════════════════ 3L LEARNING ══════════════════════ -->
+    <main class="page-shell page-narrow" data-page="3l-learning" data-title="3L Learning | Phan Anh Tu">
+      <section class="page-intro">
+        <h1>3L Learning</h1>
+        <p class="lead">
+          A learning philosophy, a learning log, and resources for students.
+        </p>
+      </section>
+
+      <section class="stack">
+        <article class="panel callout">
+          <span class="status-pill">Coming soon</span>
+          <h2>Learning philosophy in preparation</h2>
+          <p>
+            This section will host the 3L learning philosophy, an ongoing
+            learning log, and curated resources for students.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <!-- ══════════════════════ CONTACT ══════════════════════ -->
+    <main class="page-shell page-narrow" data-page="contact" data-title="Contact | Phan Anh Tu">
+      <section class="page-intro">
+        <h1>Contact details</h1>
+      </section>
+
+      <section class="detail-layout contact-layout">
+        <article class="panel">
+          <h2>Can Tho University</h2>
+          <p>School of Economics</p>
+          <p>Campus II, 3/2 Street<br />Ninh Kieu, Can Tho, Vietnam</p>
+          <p>Email: <a class="text-link" href="mailto:patu@ctu.edu.vn">patu@ctu.edu.vn</a></p>
+          <p>
+            Phone: <a class="text-link" href="tel:+84988263778">+84 988 263 778</a> (mobile)<br />
+            <a class="text-link" href="tel:+842923838831">+84 292 3838 831</a> (office)
+          </p>
+          <p>ORCID: <a class="text-link" href="https://orcid.org/0000-0003-0667-3137" target="_blank" rel="noreferrer">0000-0003-0667-3137</a></p>
+          <div class="contact-map">
+            <iframe
+              title="Map showing the School of Economics, Can Tho University Campus II, 3/2 Street, Ninh Kieu, Can Tho"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=105.7603%2C10.0241%2C105.7763%2C10.0401&amp;layer=mapnik&amp;marker=10.0321%2C105.7683"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <a class="text-link" href="https://www.openstreetmap.org/?mlat=10.0321&amp;mlon=105.7683#map=16/10.0321/105.7683" target="_blank" rel="noreferrer">Open larger map →</a>
+          </div>
+        </article>
+        <aside class="panel detail-sidebar">
+          <h2>Send a message</h2>
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-field">
+              <label for="cf-name">Name</label>
+              <input id="cf-name" name="name" type="text" autocomplete="name" required />
+            </div>
+            <div class="form-field">
+              <label for="cf-email">Email</label>
+              <input id="cf-email" name="email" type="email" autocomplete="email" required />
+            </div>
+            <div class="form-field">
+              <label for="cf-subject">Subject</label>
+              <input id="cf-subject" name="subject" type="text" required />
+            </div>
+            <div class="form-field">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" required></textarea>
+            </div>
+            <div class="hero-actions">
+              <button class="button button-primary" type="submit">Send message</button>
+            </div>
+            <p class="form-note">
+              Sending opens your email client with the message pre-filled. A
+              hosted form backend (e.g. Formspree or Basin) can be connected
+              before launch.
+            </p>
+          </form>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-links" aria-label="Profile links">
+        <a class="footer-link" href="https://orcid.org/0000-0003-0667-3137" target="_blank" rel="noreferrer">ORCID</a>
+        <a class="footer-link" href="mailto:patu@ctu.edu.vn">Email</a>
+        <a class="footer-link" href="tel:+84988263778">Phone</a>
+      </div>
+      <p>Phan Anh Tu · School of Economics · Can Tho University</p>
+    </footer>
+
+    <script>
+      (function () {
+        // ── Theme toggle (system preference by default; kept in memory) ──
+        function systemPrefersDark() {
+          return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        }
+        function applyTheme(theme) {
+          document.documentElement.setAttribute("data-theme", theme);
+        }
+        applyTheme(systemPrefersDark() ? "dark" : "light");
+
+        var themeBtn = document.querySelector(".theme-toggle");
+        if (themeBtn) {
+          themeBtn.addEventListener("click", function () {
+            var next = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+            applyTheme(next);
+          });
+        }
+
+        // ── Mobile navigation toggle ─────────────────────────
+        var header = document.querySelector(".site-header");
+        var nav = document.querySelector(".site-nav");
+        var navBtn = document.querySelector(".nav-toggle");
+
+        function closeNav() {
+          if (!header || !navBtn) return;
+          header.classList.remove("nav-open");
+          navBtn.setAttribute("aria-expanded", "false");
+        }
+
+        if (header && nav && navBtn) {
+          navBtn.addEventListener("click", function (e) {
+            e.stopPropagation();
+            var isOpen = header.classList.toggle("nav-open");
+            navBtn.setAttribute("aria-expanded", String(isOpen));
+          });
+          document.addEventListener("click", function (e) {
+            if (!header.contains(e.target)) closeNav();
+          });
+          window.addEventListener("resize", function () {
+            if (window.innerWidth >= 900) closeNav();
+          });
+        }
+
+        // ── Single-file page navigation (hash-based) ─────────
+        var pages = Array.prototype.slice.call(document.querySelectorAll("main[data-page]"));
+        var navLinks = nav ? Array.prototype.slice.call(nav.querySelectorAll("a")) : [];
+
+        function showPage(id) {
+          var exists = pages.some(function (p) { return p.getAttribute("data-page") === id; });
+          var target = exists ? id : "home";
+          pages.forEach(function (p) {
+            p.classList.toggle("is-active", p.getAttribute("data-page") === target);
+          });
+          navLinks.forEach(function (link) {
+            var isActive = link.getAttribute("href") === "#" + target;
+            link.classList.toggle("active", isActive);
+            if (isActive) {
+              link.setAttribute("aria-current", "page");
+            } else {
+              link.removeAttribute("aria-current");
+            }
+          });
+          var active = document.querySelector('main[data-page="' + target + '"]');
+          if (active && active.getAttribute("data-title")) {
+            document.title = active.getAttribute("data-title");
+          }
+          closeNav();
+          window.scrollTo(0, 0);
+        }
+
+        function routeFromHash() {
+          var id = (window.location.hash || "#home").replace("#", "");
+          showPage(id);
+        }
+
+        window.addEventListener("hashchange", routeFromHash);
+        routeFromHash();
+
+        // ── Contact form: pre-filled email (no backend needed) ──
+        var form = document.getElementById("contact-form");
+        if (form) {
+          form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            var name = document.getElementById("cf-name").value.trim();
+            var email = document.getElementById("cf-email").value.trim();
+            var subject = document.getElementById("cf-subject").value.trim();
+            var message = document.getElementById("cf-message").value.trim();
+            var body = message + "\n\n— " + name + (email ? " (" + email + ")" : "");
+            window.location.href =
+              "mailto:patu@ctu.edu.vn?subject=" +
+              encodeURIComponent(subject || "Message from phananhtu.com") +
+              "&body=" +
+              encodeURIComponent(body);
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>

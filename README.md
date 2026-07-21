@@ -38,7 +38,7 @@ Nếu muốn dùng tên miền riêng (ví dụ `phananhtu.com`):
 ## Những việc cần làm trước khi công bố chính thức
 
 - [ ] **Ảnh chân dung**: thay ảnh placeholder (chữ "PAT") trong `index.html` bằng ảnh chân dung thật (khung vuông).
-- [ ] **Logo trường**: thay logo placeholder "CTU" bằng logo chính thức của Đại học Cần Thơ.
+- [x] **Logo trường**: đã dùng logo chính thức của Đại học Cần Thơ và Trường Kinh tế (`assets/logo-ctu.png`, `assets/logo-soe.png`).
 - [ ] **File CV**: đặt file PDF vào thư mục `assets/` với tên `Phan_Anh_Tu_CV_May2026.pdf` (nút "Download CV" đang trỏ tới đường dẫn này).
 - [ ] **Form liên hệ**: hiện tại form sẽ mở trình email của người dùng (mailto). Có thể kết nối dịch vụ như Formspree hoặc Basin nếu muốn nhận tin nhắn trực tiếp.
 

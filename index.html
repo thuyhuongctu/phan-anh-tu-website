@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" href="assets/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -1052,6 +1052,128 @@
         transform: none;
       }
 
+
+      /* ── Premium polish ─────────────────────────────────── */
+      body::after {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: 999;
+        pointer-events: none;
+        opacity: 0.5;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='linear' slope='0.04'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      }
+
+      .hero-copy .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.55rem;
+        color: var(--accent);
+        margin-bottom: 0.9rem;
+      }
+
+      .hero-copy .eyebrow::before {
+        content: "";
+        width: 2rem;
+        height: 2px;
+        border-radius: 999px;
+        background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      }
+
+      .hero-copy h1 { margin-bottom: 0.9rem; }
+
+      .hero-copy h1::after {
+        content: "";
+        display: block;
+        width: 84px;
+        height: 4px;
+        margin-top: 0.6rem;
+        border-radius: 999px;
+        background: linear-gradient(90deg, var(--accent), var(--accent-2) 55%, var(--gold));
+        box-shadow: 0 3px 10px rgba(20, 96, 138, 0.35);
+      }
+
+      .portrait-frame {
+        position: relative;
+        width: min(340px, 100%);
+      }
+
+      .portrait-frame::before {
+        content: "";
+        position: absolute;
+        inset: -12px;
+        border-radius: 38px;
+        background: conic-gradient(from 0deg, var(--accent), var(--accent-2), var(--gold), var(--accent));
+        filter: blur(18px);
+        opacity: 0.4;
+        animation: ring-spin 16s linear infinite;
+        z-index: -1;
+      }
+
+      [data-theme="dark"] .portrait-frame::before { opacity: 0.5; }
+
+      @keyframes ring-spin { to { transform: rotate(360deg); } }
+
+      .portrait-frame .profile-image { width: 100%; }
+
+      .stat-strip {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 0.5rem;
+        margin-top: 1.3rem;
+        padding: 1.1rem 1.2rem;
+        background: var(--glass);
+        -webkit-backdrop-filter: blur(16px) saturate(1.35);
+        backdrop-filter: blur(16px) saturate(1.35);
+        border: 1px solid var(--glass-border);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow-1), inset 0 1px 0 var(--inner-light);
+      }
+
+      .stat {
+        display: grid;
+        gap: 0.15rem;
+        justify-items: center;
+        text-align: center;
+        padding: 0.35rem 0.5rem;
+        position: relative;
+      }
+
+      .stat + .stat::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 18%;
+        bottom: 18%;
+        width: 1px;
+        background: linear-gradient(180deg, transparent, var(--line), transparent);
+      }
+
+      .stat-number {
+        font-family: var(--serif);
+        font-size: clamp(1.7rem, 3vw, 2.35rem);
+        font-weight: 650;
+        line-height: 1.1;
+        background: linear-gradient(120deg, var(--accent), var(--accent-2));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-variant-numeric: tabular-nums;
+      }
+
+      .stat-label {
+        color: var(--muted);
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.015em;
+        line-height: 1.4;
+      }
+
+      @media (max-width: 900px) {
+        .stat-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 1rem; }
+        .stat:nth-child(3)::before { display: none; }
+      }
+
       /* ── Reduced motion ─────────────────────────────────── */
       @media (prefers-reduced-motion: reduce) {
         *, *::before, *::after {
@@ -1140,6 +1262,7 @@
     <main class="page-shell is-active" data-page="home" data-title="Phan Anh Tu | School of Economics, Can Tho University">
       <section class="hero">
         <div class="hero-copy">
+          <p class="eyebrow">Vice President · School of Economics · Can Tho University</p>
           <h1>Phan Anh Tu</h1>
           <p class="lead">
             I am <span class="homepage-highlight">Vice President of the School of
@@ -1181,12 +1304,14 @@
         </div>
         <aside class="profile-column">
           <!-- Placeholder portrait: replace with a professional photo (square crop) before launch -->
+          <div class="portrait-frame">
           <svg class="profile-image" viewBox="0 0 360 360" role="img" aria-label="Portrait of Phan Anh Tu (photo to be added)">
             <rect width="360" height="360" rx="22" fill="#e8f1f4" />
             <circle cx="180" cy="140" r="58" fill="#1e5873" opacity="0.22" />
             <path d="M70 330c14-72 58-104 110-104s96 32 110 104" fill="#1e5873" opacity="0.22" />
             <text x="180" y="158" text-anchor="middle" font-family="Iowan Old Style, Palatino, Georgia, serif" font-size="52" font-weight="700" fill="#1e5873">PAT</text>
           </svg>
+          </div>
           <div class="profile-card">
             <ul class="meta-list">
               <li>School of Economics, Can Tho University</li>
@@ -1223,6 +1348,25 @@
             </div>
           </div>
         </aside>
+      </section>
+
+      <section class="stat-strip compact-section" aria-label="Key figures">
+        <div class="stat">
+          <span class="stat-number" data-count="27">27</span>
+          <span class="stat-label">Years in academia</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-count="2">2</span>
+          <span class="stat-label">PhD dissertations supervised</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-count="30" data-suffix="+">30+</span>
+          <span class="stat-label">Master&#8217;s theses supervised</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-count="100" data-suffix="%">100%</span>
+          <span class="stat-label">PhD completion on schedule</span>
+        </div>
       </section>
 
       <section class="grid-one-two compact-section">
@@ -1785,7 +1929,7 @@
 
         // ── Scroll-reveal ──────────────────────────────────
         var revealTargets = document.querySelectorAll(
-          ".panel, .hero-copy, .profile-card, .profile-image, .research-card, .gallery-tile, .page-intro"
+          ".panel, .hero-copy, .profile-card, .portrait-frame, .research-card, .gallery-tile, .page-intro, .stat-strip"
         );
         revealTargets.forEach(function (el, i) {
           el.classList.add("reveal");
@@ -1809,6 +1953,35 @@
           { threshold: 0.08, rootMargin: "0px 0px -4% 0px" }
         );
         revealTargets.forEach(function (el) { io.observe(el); });
+
+
+        // ── Animated counters ──────────────────────────────
+        var nums = document.querySelectorAll(".stat-number[data-count]");
+        function animateCount(el) {
+          var target = parseInt(el.getAttribute("data-count"), 10);
+          var suffix = el.getAttribute("data-suffix") || "";
+          if (reduceMotion) { el.textContent = target + suffix; return; }
+          var start = null;
+          function tick(ts) {
+            if (!start) start = ts;
+            var t = Math.min((ts - start) / 1300, 1);
+            var eased = 1 - Math.pow(1 - t, 3);
+            el.textContent = Math.round(target * eased) + suffix;
+            if (t < 1) requestAnimationFrame(tick);
+          }
+          requestAnimationFrame(tick);
+        }
+        if ("IntersectionObserver" in window) {
+          var cio = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                animateCount(entry.target);
+                cio.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.4 });
+          nums.forEach(function (el) { cio.observe(el); });
+        }
 
         // Re-check visibility whenever the hash page changes
         window.addEventListener("hashchange", function () {
